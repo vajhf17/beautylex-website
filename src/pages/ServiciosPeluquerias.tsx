@@ -145,13 +145,3 @@ export default ServiciosPeluquerias
 
 
 
-
-
-const shiroSora = {
-  services: ['Frontend', 'Backend', 'Web', 'Ecommerce', 'SEO'],
-  mission: 'Digital growth for beauty brands'
-};
-
-// Contact:
-// shirosoradesign@gmail.com
-// WhatsApp | LinkedIn | QR

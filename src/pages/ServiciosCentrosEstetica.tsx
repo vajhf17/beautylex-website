@@ -144,14 +144,3 @@ export default ServiciosCentrosEstetica
 
 
 
-
-
-
-const shiroSora = {
-  services: ['Frontend', 'Backend', 'Web', 'Ecommerce', 'SEO'],
-  mission: 'Digital growth for beauty brands'
-};
-
-// Contact:
-// shirosoradesign@gmail.com
-// WhatsApp | LinkedIn | QR

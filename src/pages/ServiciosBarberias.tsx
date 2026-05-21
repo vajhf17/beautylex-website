@@ -142,16 +142,3 @@ function ServiciosBarberias() {
 
 export default ServiciosBarberias
 
-
-
-
-
-
-const shiroSora = {
-  services: ['Frontend', 'Backend', 'Web', 'Ecommerce', 'SEO'],
-  mission: 'Digital growth for beauty brands'
-};
-
-// Contact:
-// shirosoradesign@gmail.com
-// WhatsApp | LinkedIn | QR
