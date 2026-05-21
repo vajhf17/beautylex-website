@@ -12,7 +12,12 @@ import Home from "./pages/Home"
 
 
 import Servicios from "./pages/Servicios"
-import ServiciosJuridicos from "./pages/ServiciosJuridicos"
+import ServiciosPeluquerias from "./pages/ServiciosPeluquerias"
+import ServiciosTraspasos from "./pages/ServiciosTraspasos"
+import ServiciosBarberias from "./pages/ServiciosBarberias"
+import ServiciosCentrosEstetica from "./pages/ServiciosCentrosEstetica"
+import ServiciosNails from "./pages/ServiciosNails"
+import ServiciosAutonomos from "./pages/ServiciosAutonomos"
 
 
 
@@ -44,10 +49,29 @@ function AppContent() {
             <PageTransition><Servicios /></PageTransition>
           } />
 
-          <Route path="/servicios/juridicos" element={
-            <PageTransition><ServiciosJuridicos /></PageTransition>
+          <Route path="/servicios/peluquerias" element={
+            <PageTransition><ServiciosPeluquerias /></PageTransition>
           } />
 
+           <Route path="/servicios/traspasos" element={
+            <PageTransition><ServiciosTraspasos /></PageTransition>
+          } />
+
+          <Route path="/servicios/barberias" element={
+            <PageTransition><ServiciosBarberias /></PageTransition>
+          } />
+
+            <Route path="/servicios/centrosestetica" element={
+            <PageTransition><ServiciosCentrosEstetica /></PageTransition>
+          } />
+
+           <Route path="/servicios/nails" element={
+            <PageTransition><ServiciosNails /></PageTransition>
+          } />
+         
+           <Route path="/servicios/autonomos" element={
+            <PageTransition><ServiciosAutonomos /></PageTransition>
+          } />
 
 {/* FINAL RETURN DE SERVICIOS */}
 

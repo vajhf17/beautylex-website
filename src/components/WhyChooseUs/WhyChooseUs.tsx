@@ -1,45 +1,88 @@
 function WhyChooseUs() {
   return (
-    <section className="py-24 px-10 bg-gray-50">
-      <h2 className="text-3xl font-bold text-center">
-        Por qué elegir Beauty Lex
-      </h2>
+    <section className="py-28 px-6 bg-brand-light">
 
-      <p className="text-center text-gray-600 mt-4 max-w-2xl mx-auto">
-        Somos una boutique legal enfocada en el sector belleza y bienestar,
-        con soluciones claras para profesionales y empresas del sector.
-      </p>
+      <div className="max-w-7xl mx-auto">
 
-      <div className="p-10 bg-white rounded-2xl shadow-md hover:shadow-xl transition">
+        {/* HEADER */}
+        <div className="text-center max-w-3xl mx-auto">
 
-        <div className="p-8 bg-white rounded-xl shadow-sm">
-          <h3 className="text-xl font-semibold">
-            Especialización sector beauty
-          </h3>
-          <p className="text-gray-600 mt-3">
-            Conocemos la normativa y los desafíos específicos del sector.
+          <span className="uppercase tracking-[0.3em] text-sm text-brand-gold">
+            BeautyLex
+          </span>
+
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-brand-blueNavy leading-tight">
+            Por qué elegirnos
+          </h2>
+
+          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+            Boutique jurídica especializada en el sector beauty,
+            enfocada en proteger negocios y profesionales con soluciones legales claras.
           </p>
+
         </div>
 
-        <div className="p-8 bg-white rounded-xl shadow-sm">
-          <h3 className="text-xl font-semibold">
-            Seguridad jurídica
-          </h3>
-          <p className="text-gray-600 mt-3">
-            Protegemos tu negocio y te ayudamos a evitar riesgos legales.
-          </p>
-        </div>
+        {/* CARDS */}
+        <div className="grid md:grid-cols-3 gap-8 mt-20">
 
-        <div className="p-8 bg-white rounded-xl shadow-sm">
-          <h3 className="text-xl font-semibold">
-            Acompañamiento cercano
-          </h3>
-          <p className="text-gray-600 mt-3">
-            Te acompañamos en cada etapa del crecimiento de tu negocio.
-          </p>
+          {/* CARD */}
+          <div className="group bg-white rounded-3xl p-10 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-transparent hover:border-brand-gold/20">
+
+            <div className="w-14 h-14 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-2xl text-brand-gold">
+              ✦
+            </div>
+
+            <h3 className="mt-8 text-2xl font-bold text-brand-blueNavy">
+              Especialización beauty
+            </h3>
+
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              Conocemos la normativa y las necesidades reales
+              de peluquerías, barberías y centros estéticos.
+            </p>
+
+          </div>
+
+          {/* CARD */}
+          <div className="group bg-brand-blueNavy rounded-3xl p-10 shadow-xl hover:-translate-y-2 transition duration-300 text-white">
+
+            <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-2xl text-brand-gold">
+              ⚖
+            </div>
+
+            <h3 className="mt-8 text-2xl font-bold">
+              Seguridad jurídica
+            </h3>
+
+            <p className="mt-4 text-gray-300 leading-relaxed">
+              Protegemos tu negocio frente a riesgos legales,
+              conflictos y problemas administrativos.
+            </p>
+
+          </div>
+
+          {/* CARD */}
+          <div className="group bg-white rounded-3xl p-10 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-300 border border-transparent hover:border-brand-gold/20">
+
+            <div className="w-14 h-14 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-2xl text-brand-gold">
+              ✦
+            </div>
+
+            <h3 className="mt-8 text-2xl font-bold text-brand-blueNavy">
+              Acompañamiento cercano
+            </h3>
+
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              Trabajamos de forma cercana y personalizada
+              en cada etapa del crecimiento de tu negocio.
+            </p>
+
+          </div>
+
         </div>
 
       </div>
+
     </section>
   )
 }

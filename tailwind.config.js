@@ -16,6 +16,9 @@ export default {
           blueLight: "#5990C0"
 
         }
+      },
+      fontFamily: {
+         sans: ['League Spartan', 'sans-serif'],
       }
     },
   },

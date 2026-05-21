@@ -40,10 +40,45 @@ function Navbar() {
             <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-80 bg-white text-brand-blue rounded-2xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
               
               <Link
-                to="/servicios/juridicos"
+                to="/servicios/peluquerias"
                 className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
               >
-                Servicios Jurídicos
+                Peluquerias
+              </Link>
+
+               <Link
+                to="/servicios/barberias"
+                className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
+              >
+                Barberias
+              </Link>
+
+               <Link
+                to="/servicios/centrosestetica"
+                className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
+              >
+                Centros de Estética
+              </Link>
+
+               <Link
+                to="/servicios/nails"
+                className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
+              >
+                Nails Studios
+              </Link>
+
+              <Link
+                to="/servicios/autonomos"
+                className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
+              >
+                Autónomos Beauty
+              </Link>
+
+               <Link
+                to="/servicios/traspasos"
+                className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
+              >
+                Gestión de Traspasos
               </Link>
 
               <Link
@@ -111,11 +146,11 @@ function Navbar() {
 
                 <div className="mt-4 flex flex-col items-center gap-3 text-sm text-gray-600">
                   <Link
-                    to="/servicios/juridicos"
+                    to="/servicios/peluquerias"
                     onClick={() => setOpen(false)}
                     className="hover:text-brand-gold transition"
                   >
-                    Servicios Jurídicos
+                    Servicios Peluquerias
                   </Link>
 
                   <Link

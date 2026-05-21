@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import heroImage from "../../assets/bannercolor.png"
 
 function Hero() {
@@ -32,13 +33,19 @@ function Hero() {
 
         <div className="mt-6 md:mt-8 flex flex-col md:flex-row gap-3 md:gap-4">
 
-          <button className="bg-brand-blue text-brand-gold px-6 py-3 rounded-lg font-medium md:text-lg w-full md:w-auto">
-            Pide tu cita
-          </button>
+          <Link
+  to="/contacto"
+  className="bg-brand-blue text-brand-gold px-6 py-3 rounded-xl font-medium md:text-lg w-full md:w-auto text-center hover:opacity-90 transition"
+>
+  Pide tu cita
+</Link>
 
-          <button className="border border-brand-beige text-brand-blueLigth px-6 py-3 rounded-lg md:text-lg w-full md:w-auto">
-            Ver servicios
-          </button>
+<Link
+  to="/servicios"
+  className="border border-brand-light/40 backdrop-blur-sm bg-white/5 text-brand-light px-6 py-3 rounded-xl md:text-lg w-full md:w-auto text-center hover:bg-white/10 transition"
+>
+  Ver servicios
+</Link>
 
         </div>
 
