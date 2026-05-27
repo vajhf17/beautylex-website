@@ -16,8 +16,8 @@ import ServiciosPeluquerias from "./pages/ServiciosPeluquerias"
 import ServiciosTraspasos from "./pages/ServiciosTraspasos"
 import ServiciosBarberias from "./pages/ServiciosBarberias"
 import ServiciosCentrosEstetica from "./pages/ServiciosCentrosEstetica"
-import ServiciosNails from "./pages/ServiciosNails"
 import ServiciosAutonomos from "./pages/ServiciosAutonomos"
+import ServiciosGremios from "./pages/ServiciosCoworkings"
 import ServiciosOtros from "./pages/ServiciosOtros"
 
 
@@ -65,13 +65,13 @@ function AppContent() {
             <Route path="/servicios/centrosestetica" element={
             <PageTransition><ServiciosCentrosEstetica /></PageTransition>
           } />
-
-           <Route path="/servicios/nails" element={
-            <PageTransition><ServiciosNails /></PageTransition>
-          } />
          
            <Route path="/servicios/autonomos" element={
             <PageTransition><ServiciosAutonomos /></PageTransition>
+          } />
+
+          <Route path="/servicios/gremios" element={
+            <PageTransition><ServiciosGremios /></PageTransition>
           } />
 
             <Route path="/servicios/otros" element={

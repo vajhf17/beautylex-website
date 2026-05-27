@@ -60,18 +60,18 @@ function Navbar() {
                 Centros de Estética
               </Link>
 
-               <Link
-                to="/servicios/nails"
-                className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
-              >
-                Nails Studios
-              </Link>
-
               <Link
                 to="/servicios/autonomos"
                 className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
               >
                 Autónomos y pymes
+              </Link>
+
+              <Link
+                to="/servicios/gremios"
+                className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
+              >
+                Colectivos,gremios y entidades
               </Link>
 
                <Link
@@ -188,11 +188,11 @@ function Navbar() {
             </Link>
 
             <Link
-              to="/servicios/nails"
+              to="/servicios/gremios"
               onClick={() => setOpen(false)}
               className="text-gray-600 hover:text-brand-gold transition"
             >
-              Nails
+              Colectivos,gremios y entidades
             </Link>
 
             <Link

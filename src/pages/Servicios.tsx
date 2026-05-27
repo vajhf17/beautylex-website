@@ -47,8 +47,7 @@ function Servicios() {
                   </h1>
 
                   <p className="mt-6 text-lg text-gray-200 leading-relaxed">
-                    Protección legal especializada para peluquerías,
-                    centros de estética y profesionales del sector.
+                   Asesoramiento jurídico, fiscal y contable especializado para negocios y profesionales del sector belleza y bienestar.
                   </p>
 
                   <div className="mt-10 flex gap-4 flex-wrap">
@@ -97,8 +96,7 @@ function Servicios() {
                   </h2>
 
                   <p className="mt-6 text-lg text-gray-200">
-                    Participación activa en eventos, asociaciones
-                    y espacios profesionales del sector beauty.
+                   Participación activa en eventos, asociaciones, gremios y espacios profesionales del sector belleza y bienestar.
                   </p>
 
                 </div>
@@ -130,8 +128,7 @@ function Servicios() {
                   </h2>
 
                   <p className="mt-6 text-lg text-gray-200">
-                    Acompañamiento jurídico especializado para operaciones
-                    seguras dentro del sector beauty.
+                    Asesoramiento legal especializado para la compra, venta y traspaso seguro de negocios del sector beauty y wellness.
                   </p>
 
                 </div>
@@ -174,12 +171,11 @@ function Servicios() {
               </div>
 
               <h3 className="mt-8 text-2xl font-bold">
-                Asesoría jurídica
+                Asesoría jurídica y legal
               </h3>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed do eiusmod tempor incididunt ut labore.
+                Asesoramiento jurídico especializado, defensa legal y cumplimiento normativo para negocios y profesionales del sector beauty.
               </p>
 
             </div>
@@ -196,8 +192,7 @@ function Servicios() {
               </h3>
 
               <p className="mt-4 text-gray-300 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed do eiusmod tempor incididunt ut labore.
+                Asesoramiento legal integral para la compra, venta y traspaso de negocios del sector belleza y bienestar.
               </p>
 
             </div>
@@ -210,12 +205,11 @@ function Servicios() {
               </div>
 
               <h3 className="mt-8 text-2xl font-bold">
-                Representación legal
+                Gestión y protección empresarial
               </h3>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed do eiusmod tempor incididunt ut labore.
+                Protección de datos, gestión fiscal y contable, registro de marcas, seguros y soluciones legales para fortalecer tu negocio.
               </p>
 
             </div>
@@ -242,7 +236,7 @@ function Servicios() {
             </div>
 
             <p className="max-w-xl text-gray-600">
-              Trabajamos con empresas y autónomos beauty que buscan crecer con seguridad jurídica y tranquilidad.
+              Trabajamos con autónomos, pymes y negocios del sector beauty que buscan crecer con seguridad jurídica, fiscal y empresarial.
             </p>
 
           </div>
@@ -263,7 +257,7 @@ function Servicios() {
                 link: "/servicios/estetica",
               },
               {
-                title: "Autónomos",
+                title: "Autónomos y pymes",
                 link: "/servicios/autonomos",
               },
             ].map((item) => (
@@ -279,7 +273,7 @@ function Servicios() {
                   </h3>
 
                   <p className="mt-4 text-gray-600 group-hover:text-gray-300 transition">
-                    Descubre nuestros servicios detalladamente
+                   Servicios jurídicos, fiscales y legales adaptados a cada actividad beauty.
                   </p>
 
                 </div>
@@ -330,7 +324,7 @@ function Servicios() {
           </h2>
 
           <p className="mt-6 max-w-2xl mx-auto text-gray-300 text-lg">
-            Te ayudamos a cumplir la normativa, proteger tu actividad y tomar decisiones legales con seguridad y confianza.
+           Te ayudamos con la gestión jurídica, fiscal y contable de tu negocio beauty para que trabajes con seguridad y tranquilidad.
           </p>
 
           <Link

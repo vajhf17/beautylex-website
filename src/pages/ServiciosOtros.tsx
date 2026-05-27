@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import otrosImg from "../assets/otrosservicios.jpeg"
-import jm2 from "../assets/jm2.png"
+import jordi from "../assets/jm3.png"
 
 function ServiciosOtros() {
   return (
@@ -80,7 +80,7 @@ function ServiciosOtros() {
           {/* IMAGEN */}
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <img
-              src={jm2}
+              src={jordi}
               className="w-full h-[300px] md:h-[400px] object-cover"
               alt="Servicios legales"
             />

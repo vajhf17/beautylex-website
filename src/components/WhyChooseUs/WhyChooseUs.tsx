@@ -33,12 +33,11 @@ function WhyChooseUs() {
             </div>
 
             <h3 className="mt-8 text-2xl font-bold text-brand-blueNavy">
-              Especialización beauty
+              Expertos en negocios beauty
             </h3>
 
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Conocemos la normativa y las necesidades reales
-              de peluquerías, barberías y centros estéticos.
+              Conocemos las necesidades y normativas legales, fiscales y laborales de negocios dedicados a la belleza, estética y bienestar.
             </p>
 
           </div>
@@ -51,12 +50,11 @@ function WhyChooseUs() {
             </div>
 
             <h3 className="mt-8 text-2xl font-bold">
-              Seguridad jurídica
+              Seguridad jurídica y legal
             </h3>
 
             <p className="mt-4 text-gray-300 leading-relaxed">
-              Protegemos tu negocio frente a riesgos legales,
-              conflictos y problemas administrativos.
+              Protegemos a autónomos, pymes y negocios beauty frente a riesgos legales, sanciones y conflictos administrativos.
             </p>
 
           </div>
@@ -69,12 +67,11 @@ function WhyChooseUs() {
             </div>
 
             <h3 className="mt-8 text-2xl font-bold text-brand-blueNavy">
-              Acompañamiento cercano
+              Cercanía y compromiso
             </h3>
 
             <p className="mt-4 text-gray-600 leading-relaxed">
-              Trabajamos de forma cercana y personalizada
-              en cada etapa del crecimiento de tu negocio.
+             Trabajamos de forma cercana, profesional y personalizada para proteger y hacer crecer tu negocio.
             </p>
 
           </div>
