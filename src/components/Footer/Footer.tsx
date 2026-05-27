@@ -1,75 +1,157 @@
+import { Link } from "react-router-dom"
+import logo from "../../assets/logocircular.png"
+
 function Footer() {
   return (
-    <footer className="bg-brand-blueNavy text-white py-16 px-6 md:px-10 mt-24">
+    <footer className="bg-brand-blueNavy text-white pt-24 pb-10 px-6 md:px-10 mt-24 overflow-hidden">
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+      <div className="max-w-7xl mx-auto">
 
-        <div className="space-y-4">
-          <h3 className="text-2xl font-bold">Beauty Lex</h3>
+        {/* TOP */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-14">
 
-          <p className="text-base text-brand-ligth leading-relaxed">
-            Boutique Legal especializada en el sector belleza y bienestar.
-          </p>
-        </div>
+          {/* BRAND */}
+          <div className="md:col-span-2">
 
-        <div className="space-y-4">
-          <h4 className="text-lg font-semibold">Enlaces</h4>
+            <img
+              src={logo}
+              alt="BeautyLex"
+              className="w-20 h-20 object-contain"
+            />
 
-          <ul className="space-y-3 text-brand-ligth">
-            <li className="hover:text-brand-gold transition cursor-pointer">
-              Servicios
-            </li>
+            <h3 className="mt-6 text-3xl font-bold">
+              BeautyLex
+            </h3>
 
-            <li className="hover:text-brand-gold transition cursor-pointer">
-              Equipo
-            </li>
+            <p className="mt-6 max-w-md text-brand-light/70 leading-relaxed">
+              Boutique jurídica especializada en el sector beauty y bienestar,
+              enfocada en acompañar a profesionales y negocios con soluciones legales modernas y cercanas.
+            </p>
 
-            <li className="hover:text-brand-gold transition cursor-pointer">
-              Redes Sociales
-            </li>
+          </div>
 
-            <li className="hover:text-brand-gold transition cursor-pointer">
+          {/* NAVEGACIÓN */}
+          <div>
+
+            <h4 className="text-lg font-semibold text-brand-gold">
+              Navegación
+            </h4>
+
+            <div className="mt-6 flex flex-col gap-4 text-brand-light/70">
+
+              <Link
+                to="/"
+                className="hover:text-brand-gold transition"
+              >
+                Inicio
+              </Link>
+
+              <Link
+                to="/servicios"
+                className="hover:text-brand-gold transition"
+              >
+                Servicios
+              </Link>
+
+              <Link
+                to="/equipo"
+                className="hover:text-brand-gold transition"
+              >
+                Equipo
+              </Link>
+
+              <Link
+                to="/news"
+                className="hover:text-brand-gold transition"
+              >
+                News
+              </Link>
+
+              <Link
+                to="/contacto"
+                className="hover:text-brand-gold transition"
+              >
+                Contacto
+              </Link>
+
+            </div>
+
+          </div>
+
+          {/* CONTACTO */}
+          <div>
+
+            <h4 className="text-lg font-semibold text-brand-gold">
               Contacto
-            </li>
-          </ul>
+            </h4>
+
+            <div className="mt-6 flex flex-col gap-4 text-brand-light/70">
+
+              <p>
+                Barcelona, España
+              </p>
+
+              <a
+                href="mailto:info@beautylex.com"
+                className="hover:text-brand-gold transition"
+              >
+                info@beautylex.com
+              </a>
+
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-brand-gold transition"
+              >
+                Instagram
+              </a>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <div className="space-y-4">
-          <h4 className="text-lg font-semibold">Contacto</h4>
+        {/* DIVIDER */}
+        <div className="h-px bg-white/10 my-12"></div>
 
-          <p className="text-brand-ligth">
-            info@beautylex.com
-          </p>
-
-          <p className="text-brand-ligth">
-            Barcelona, España.
-          </p>
-        </div>
-      </div>
-
-      <div className="max-w-6xl mx-auto border-t border-white/10 mt-12 pt-8">
-
+        {/* BOTTOM */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
 
-          <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm text-brand-ligth">
-            <a href="/aviso-legal" className="hover:text-brand-gold transition">
+          {/* LEGAL */}
+          <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm text-brand-light/60">
+
+            <Link
+              to="/aviso-legal"
+              className="hover:text-brand-gold transition"
+            >
               Aviso legal
-            </a>
+            </Link>
 
-            <a href="/privacidad" className="hover:text-brand-gold transition">
-              Privacidad
-            </a>
+            <Link
+              to="/privacidad"
+              className="hover:text-brand-gold transition"
+            >
+              Política de privacidad
+            </Link>
 
-            <a href="/cookies" className="hover:text-brand-gold transition">
+            <Link
+              to="/cookies"
+              className="hover:text-brand-gold transition"
+            >
               Cookies
-            </a>
+            </Link>
+
           </div>
 
-          <div className="text-sm text-brand-gold text-center md:text-right">
-            © {new Date().getFullYear()} Beauty Lex. Todos los derechos reservados.
-          </div>
+          {/* COPYRIGHT */}
+          <p className="text-sm text-brand-light/50 text-center md:text-right">
+            © {new Date().getFullYear()} BeautyLex · Todos los derechos reservados.
+          </p>
 
         </div>
+
       </div>
 
     </footer>

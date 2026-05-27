@@ -1,18 +1,25 @@
 import { Link } from "react-router-dom"
-import heroImage from "../../assets/bannercolor.png"
+import heroDesktop from "../../assets/bannercolor.png"
+import heroMobile from "../../assets/bannerinimobile1.png"
 
 function Hero() {
   return (
     <section className="relative min-h-[90vh] md:h-[80vh] flex items-center mt-20 md:mt-24">
-  <div className="h-20 md:h-24"></div>
+ {/* IMAGEN DESKTOP */}
+    <div
+      className="absolute inset-0 bg-cover bg-center hidden md:block"
+      style={{
+        backgroundImage: `url(${heroDesktop})`,
+      }}
+    />
 
-      {/* imagen de fondo */}
-      <div
-        className="absolute inset-0 bg-cover bg-black [55%_40%] md:bg-black"
-        style={{
-          backgroundImage: `url(${heroImage})`
-        }}
-      />
+    {/* IMAGEN MOBILE */}
+    <div
+      className="absolute inset-0 bg-cover bg-center md:hidden"
+      style={{
+        backgroundImage: `url(${heroMobile})`,
+      }}
+    />
 
       {/* overlay oscuro */}
       <div className="absolute inset-0 bg-black/50"></div>
