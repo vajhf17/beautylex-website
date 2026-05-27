@@ -44,7 +44,7 @@ function Cookies() {
         <div>
           <p>
             Para más información, puede contactarnos en:{" "}
-            <span className="font-medium">contacto@beautylex.com</span>
+            <span className="font-medium">info@beautylex.com</span>
           </p>
         </div>
 
