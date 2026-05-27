@@ -113,83 +113,131 @@ function Navbar() {
           </li>
         </ul>
 
-        {/* BOTÓN HAMBURGUESA */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden relative z-[60] p-2 rounded-full bg-brand-blueNavy text-white hover:bg-brand-blue transition"
+{/* BOTÓN HAMBURGUESA */}
+<button
+  onClick={() => setOpen(!open)}
+  className="md:hidden relative z-[60] p-2 rounded-full bg-brand-blueNavy text-white hover:bg-brand-blue transition"
+>
+  {open ? <X size={22} /> : <Menu size={22} />}
+</button>
+
+{/* MENU MOBILE */}
+{open && (
+  <div className="fixed inset-0 bg-brand-light z-40 md:hidden overflow-y-auto">
+
+    <div className="pt-32 pb-16 px-8 flex flex-col">
+
+      {/* LINKS PRINCIPALES */}
+      <div className="flex flex-col gap-8">
+
+        <Link
+          to="/"
+          onClick={() => setOpen(false)}
+          className="text-3xl font-bold text-brand-blueNavy"
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
-        </button>
+          Inicio
+        </Link>
 
-        {/* MENU MOBILE */}
-        {open && (
-          <div className="fixed inset-0 bg-brand-light z-40 flex flex-col items-center pt-28 pb-12 px-6 overflow-y-auto md:hidden">
+        {/* SERVICIOS */}
+        <div>
 
-            <div className="flex flex-col items-center gap-8 w-full">
+          <p className="text-3xl font-bold text-brand-blueNavy">
+            Servicios
+          </p>
 
-              <Link
-                to="/"
-                onClick={() => setOpen(false)}
-                className="text-2xl font-semibold text-brand-blueNavy"
-              >
-                Inicio
-              </Link>
+          <div className="mt-6 flex flex-col gap-4 pl-2 border-l-2 border-brand-gold/30">
 
-              <div className="flex flex-col items-center">
-                <Link
-                  to="/servicios"
-                  onClick={() => setOpen(false)}
-                  className="text-2xl font-semibold text-brand-blueNavy"
-                >
-                  Servicios
-                </Link>
+            <Link
+              to="/servicios"
+              onClick={() => setOpen(false)}
+              className="text-gray-600 hover:text-brand-gold transition"
+            >
+              Todos los servicios
+            </Link>
 
-                <div className="mt-4 flex flex-col items-center gap-3 text-sm text-gray-600">
-                  <Link
-                    to="/servicios/peluquerias"
-                    onClick={() => setOpen(false)}
-                    className="hover:text-brand-gold transition"
-                  >
-                    Servicios Peluquerias
-                  </Link>
+            <Link
+              to="/servicios/peluquerias"
+              onClick={() => setOpen(false)}
+              className="text-gray-600 hover:text-brand-gold transition"
+            >
+              Peluquerías
+            </Link>
 
-                  <Link
-                    to="/servicios/otros"
-                    onClick={() => setOpen(false)}
-                    className="hover:text-brand-gold transition"
-                  >
-                    Otros Servicios
-                  </Link>
-                </div>
-              </div>
+            <Link
+              to="/servicios/barberias"
+              onClick={() => setOpen(false)}
+              className="text-gray-600 hover:text-brand-gold transition"
+            >
+              Barberías
+            </Link>
 
-              <Link
-                to="/equipo"
-                onClick={() => setOpen(false)}
-                className="text-2xl font-semibold text-brand-blueNavy"
-              >
-                Equipo
-              </Link>
+            <Link
+              to="/servicios/centrosestetica"
+              onClick={() => setOpen(false)}
+              className="text-gray-600 hover:text-brand-gold transition"
+            >
+              Centros estéticos
+            </Link>
 
-              <Link
-                to="/news"
-                onClick={() => setOpen(false)}
-                className="text-2xl font-semibold text-brand-blueNavy"
-              >
-                News
-              </Link>
+            <Link
+              to="/servicios/autonomos"
+              onClick={() => setOpen(false)}
+              className="text-gray-600 hover:text-brand-gold transition"
+            >
+              Autónomos
+            </Link>
 
-              <Link
-                to="/contacto"
-                onClick={() => setOpen(false)}
-                className="bg-brand-gold text-brand-light px-6 py-3 rounded-full text-lg font-medium"
-              >
-                Contacto
-              </Link>
+            <Link
+              to="/servicios/nails"
+              onClick={() => setOpen(false)}
+              className="text-gray-600 hover:text-brand-gold transition"
+            >
+              Nails
+            </Link>
 
-            </div>
+            <Link
+              to="/servicios/traspasos"
+              onClick={() => setOpen(false)}
+              className="text-gray-600 hover:text-brand-gold transition"
+            >
+              Traspasos
+            </Link>
+
           </div>
-        )}
+
+        </div>
+
+        <Link
+          to="/equipo"
+          onClick={() => setOpen(false)}
+          className="text-3xl font-bold text-brand-blueNavy"
+        >
+          Equipo
+        </Link>
+
+        <Link
+          to="/news"
+          onClick={() => setOpen(false)}
+          className="text-3xl font-bold text-brand-blueNavy"
+        >
+          News
+        </Link>
+
+      </div>
+
+      {/* CTA */}
+      <Link
+        to="/contacto"
+        onClick={() => setOpen(false)}
+        className="mt-14 bg-brand-gold text-white px-8 py-4 rounded-full text-center text-lg font-medium hover:opacity-90 transition"
+      >
+        Contactar
+      </Link>
+
+    </div>
+
+  </div>
+)}
       </div>
     </nav>
   )
