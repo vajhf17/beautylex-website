@@ -40,7 +40,6 @@ function Sector() {
 
               <p>Peluquerías</p>
               <p>Barberías</p>
-              <p>Clínicas estéticas</p>
               <p>Centros de estética</p>
 
             </div>
@@ -60,9 +59,9 @@ function Sector() {
 
             <div className="mt-6 space-y-3 text-gray-300">
 
-              <p>Autónomos</p>
+              <p>Autónomos y profesionales</p>
               <p>Freelancers</p>
-              <p>Técnicos beauty</p>
+              <p>Técnicos Especialistas</p>
 
             </div>
 
@@ -76,14 +75,15 @@ function Sector() {
             </div>
 
             <h3 className="mt-8 text-3xl font-bold text-brand-blueNavy group-hover:text-white transition">
-              Especialistas beauty
+              Colectivos y Entidades del sector
             </h3>
 
             <div className="mt-6 space-y-3 text-gray-600 group-hover:text-gray-300 transition">
 
-              <p>Nails</p>
-              <p>Makeup artists</p>
-              <p>Lashistas</p>
+              <p>Coworkings beauty</p>
+              <p>Gremios profesionalestists</p>
+              <p>Academias beauty</p>
+              <p>Asociaciones del sector</p>
 
             </div>
 

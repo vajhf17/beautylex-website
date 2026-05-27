@@ -1,26 +1,26 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import logo from "../../assets/logocircular.png"
+import logo from "../../assets/logovector.svg"
 import { Menu, X } from "lucide-react"
 
 function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-brand-light shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
+   <nav className="fixed top-0 left-0 w-full z-50 bg-brand-light/95 backdrop-blur-md border-b border-black/5">
+  <div className="w-full flex items-center justify-between px-6 md:px-14 py-3">
 
-        {/* LOGO */}
-        <Link to="/">
-          <img
-            src={logo}
-            alt="Beauty Lex"
-            className="h-10 md:h-12 w-auto"
-          />
-        </Link>
+    {/* LOGO */}
+    <Link to="/">
+      <img
+        src={logo}
+        alt="Beauty Lex"
+        className="h-16 md:h-12 w-auto"
+      />
+    </Link>
 
         {/* MENU DESKTOP */}
-        <ul className="hidden md:flex items-center gap-8 text-sm text-brand-blueNavy uppercase tracking-[0.15em] font-medium">
+        <ul className="hidden md:flex items-center gap-10 text-[13px] text-brand-blueNavy uppercase tracking-[0.15em] font-medium">
           <li>
             <Link to="/" className="hover:text-brand-gold transition">
               Inicio
@@ -71,7 +71,7 @@ function Navbar() {
                 to="/servicios/autonomos"
                 className="block px-6 py-4 hover:bg-gray-50 border-b border-gray-100"
               >
-                Autónomos Beauty
+                Autónomos y pymes
               </Link>
 
                <Link
@@ -184,7 +184,7 @@ function Navbar() {
               onClick={() => setOpen(false)}
               className="text-gray-600 hover:text-brand-gold transition"
             >
-              Autónomos
+              Autónomos y pymes
             </Link>
 
             <Link

@@ -4,23 +4,25 @@ import ss4 from "../assets/ss4.jpeg"
 
 function ServiciosCentrosEstetica() {
   return (
-    <main className="pt-20">
+    <main>
 
       {/* HERO */}
-      <section
-        className="relative h-[65vh] flex items-center text-white"
-        style={{
-          backgroundImage: `url(${estetica})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
-      >
-        <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
+<section
+  className="relative h-[80vh] flex items-end text-white bg-cover bg-[center_10%]"
+  style={{
+    backgroundImage: `url(${estetica})`,
+  }}
+>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
-            Servicios enfocados en Centros de Estética
-          </h1>
+  <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
+
+  <div className="relative z-10 px-6 md:px-16 pb-16 md:pb-24 max-w-3xl">
+
+    <h1 className="text-4xl md:text-7xl font-bold leading-[0.95]">
+      Servicios para
+      <br />
+      Centros de Estética
+    </h1>
 
           <p className="mt-4 md:mt-6 max-w-xl text-sm md:text-lg text-gray-200">
             Protegemos tu centro de estética con soluciones legales especializadas para que trabajes con tranquilidad y seguridad.
@@ -57,7 +59,7 @@ function ServiciosCentrosEstetica() {
             </h3>
 
             <p className="mt-6 text-gray-600">
-              Ayudamos a centros de estética a cumplir la normativa vigente y proteger su negocio frente a riesgos laborales, fiscales y jurídicos.
+              Ayudamos a centros de estética a cumplir la normativa vigente y proteger su negocio frente a riesgos laborales, contables, fiscales y jurídicos.
             </p>
 
             <ul className="mt-6 space-y-3 text-gray-600">
@@ -108,7 +110,7 @@ function ServiciosCentrosEstetica() {
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <h4 className="font-semibold text-lg text-brand-blueNavy">
-              Gestión laboral y fiscal
+              Gestión laboral, fiscal y contable
             </h4>
             <p className="mt-3 text-gray-600 text-sm">
               Contratos, nóminas, fiscalidad y gestión administrativa especializada.

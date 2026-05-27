@@ -1,77 +1,189 @@
+import { Link } from "react-router-dom"
+import otrosImg from "../assets/otrosservicios.jpeg"
+import jm2 from "../assets/jm2.png"
+
 function ServiciosOtros() {
   return (
-    <section className="py-24 px-6 max-w-6xl mx-auto">
+    <main>
 
-      <div className="max-w-3xl">
-        <p className="text-sm uppercase tracking-widest text-brand-gold mb-4">
-          Servicios Adicionales
-        </p>
+      {/* HERO */}
+      <section
+        className="relative h-[80vh] flex items-end text-white bg-cover bg-[center_20%]"
+        style={{
+          backgroundImage: `url(${otrosImg})`,
+        }}
+      >
 
-        <h1 className="text-5xl font-bold text-[#2F2F2F] leading-tight">
-          Asesoramiento legal especializado para negocios del sector beauty
-        </h1>
+        <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
 
-        <p className="mt-6 text-lg text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
+        <div className="relative z-10 px-6 md:px-16 pb-16 md:pb-24 max-w-3xl">
 
-      <div className="grid md:grid-cols-2 gap-8 mt-16">
+          <h1 className="text-4xl md:text-7xl font-bold leading-[0.95]">
+            Otros servicios
+            <br />
+            especializados
+          </h1>
 
-        <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
-          <h2 className="text-2xl font-semibold mb-4">
-            Apertura de negocio
-          </h2>
-
-          <p className="text-gray-600 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <p className="mt-6 text-base md:text-lg text-gray-200 leading-relaxed max-w-xl">
+            Soluciones legales complementarias para proteger y fortalecer tu negocio beauty de forma integral.
           </p>
 
-          <ul className="space-y-3 text-gray-600 text-sm">
-            <li>✔ Lorem ipsum dolor sit amet</li>
-            <li>✔ Consectetur adipiscing elit</li>
-            <li>✔ Sed do eiusmod tempor</li>
-            <li>✔ Ut labore et dolore magna</li>
-          </ul>
+          <Link
+            to="/contacto"
+            className="inline-flex mt-8 bg-brand-gold text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition"
+          >
+            Contactar
+          </Link>
+
         </div>
 
-        <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
-          <h2 className="text-2xl font-semibold mb-4">
-            Protección frente a inspecciones
-          </h2>
+      </section>
 
-          <p className="text-gray-600 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+      {/* INTRO */}
+      <section className="py-16 md:py-24 px-6 max-w-5xl mx-auto text-center">
 
-          <ul className="space-y-3 text-gray-600 text-sm">
-            <li>✔ Lorem ipsum dolor sit amet</li>
-            <li>✔ Consectetur adipiscing elit</li>
-            <li>✔ Sed do eiusmod tempor</li>
-            <li>✔ Ut labore et dolore magna</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div className="mt-16 bg-[#F1EFE7] rounded-3xl p-10 text-center">
-        <h2 className="text-3xl font-bold mb-4">
-          ¿Qué Necesitas?
+        <h2 className="text-2xl md:text-3xl font-bold text-brand-blueNavy">
+          Áreas de especialización jurídica para negocios beauty
         </h2>
 
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p className="mt-6 text-gray-600 leading-relaxed max-w-2xl mx-auto">
+          En Beauty Lex ofrecemos servicios estratégicos diseñados para reforzar la seguridad legal, operativa y empresarial de profesionales y negocios del sector belleza y bienestar.
         </p>
 
-        <a
-          href="/contacto"
-          className="inline-block mt-8 bg-brand-gold text-white px-8 py-3 rounded-lg hover:opacity-90 transition"
+      </section>
+
+      {/* SOLUCIONES */}
+      <section className="bg-brand-cream py-16 md:py-24 px-6">
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+          {/* TEXTO */}
+          <div>
+
+            <h3 className="text-2xl md:text-3xl font-bold text-brand-blueNavy">
+              Soluciones legales complementarias
+            </h3>
+
+            <p className="mt-6 text-gray-600">
+              Ayudamos a profesionales y empresas beauty a proteger su actividad mediante servicios jurídicos especializados y adaptados a las necesidades reales del sector.
+            </p>
+
+            <ul className="mt-6 space-y-3 text-gray-600">
+              <li>✔ Protección de datos y RGPD</li>
+              <li>✔ Procedimientos judiciales y defensa legal</li>
+              <li>✔ Registro y protección de marcas</li>
+              <li>✔ Asesoramiento en seguros profesionales</li>
+            </ul>
+
+          </div>
+
+          {/* IMAGEN */}
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src={jm2}
+              className="w-full h-[300px] md:h-[400px] object-cover"
+              alt="Servicios legales"
+            />
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* SERVICIOS */}
+      <section className="py-16 md:py-24 px-6 max-w-6xl mx-auto">
+
+        <h3 className="text-2xl md:text-3xl font-bold text-brand-blueNavy text-center">
+          Servicios estratégicos para negocios beauty
+        </h3>
+
+        <div className="mt-12 grid md:grid-cols-3 gap-8">
+
+          <div className="bg-white p-6 rounded-xl shadow-md text-center">
+            <h4 className="font-semibold text-lg text-brand-blueNavy">
+              Protección de datos
+            </h4>
+
+            <p className="mt-3 text-gray-600 text-sm">
+              Adaptación RGPD, gestión de datos de clientes, consentimientos y cumplimiento normativo.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-md text-center">
+            <h4 className="font-semibold text-lg text-brand-blueNavy">
+              Procedimientos judiciales
+            </h4>
+
+            <p className="mt-3 text-gray-600 text-sm">
+              Defensa y representación legal ante reclamaciones, conflictos e incidencias jurídicas.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-md text-center">
+            <h4 className="font-semibold text-lg text-brand-blueNavy">
+              Registro de marcas
+            </h4>
+
+            <p className="mt-3 text-gray-600 text-sm">
+              Protección legal de nombres comerciales, marcas y proyectos del sector beauty.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-md text-center">
+            <h4 className="font-semibold text-lg text-brand-blueNavy">
+              Seguros profesionales
+            </h4>
+
+            <p className="mt-3 text-gray-600 text-sm">
+              Asesoramiento en seguros y protección frente a riesgos profesionales y empresariales.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-md text-center">
+            <h4 className="font-semibold text-lg text-brand-blueNavy">
+              Compliance normativo
+            </h4>
+
+            <p className="mt-3 text-gray-600 text-sm">
+              Cumplimiento legal, prevención de riesgos y adaptación normativa para negocios beauty.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-md text-center">
+            <h4 className="font-semibold text-lg text-brand-blueNavy">
+              Contratos y documentación
+            </h4>
+
+            <p className="mt-3 text-gray-600 text-sm">
+              Redacción y revisión de contratos, acuerdos y documentación legal especializada.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* CTA */}
+      <section className="bg-brand-blueNavy text-white py-16 md:py-24 px-6 text-center">
+
+        <h3 className="text-2xl md:text-3xl font-bold">
+          Refuerza legalmente tu negocio beauty
+        </h3>
+
+        <p className="mt-4 text-gray-200 max-w-2xl mx-auto">
+          Te ayudamos a proteger tu marca, tu actividad y tu crecimiento con asesoramiento jurídico especializado.
+        </p>
+
+        <Link
+          to="/contacto"
+          className="inline-block mt-6 bg-brand-gold text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition"
         >
           Solicitar información
-        </a>
-      </div>
+        </Link>
 
-    </section>
+      </section>
+
+    </main>
   )
 }
 

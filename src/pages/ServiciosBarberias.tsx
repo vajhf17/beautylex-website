@@ -4,22 +4,23 @@ import ss3 from "../assets/ss3.jpeg"
 
 function ServiciosBarberias() {
   return (
-    <main className="pt-20">
+    <main>
 
       {/* HERO */}
       <section
-        className="relative h-[65vh] flex items-center text-white"
+        className="relative h-[80vh] flex items-end text-white bg-cover bg-[center_10%]"
         style={{
           backgroundImage: `url(${barber})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
         }}
       >
-        <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
+      <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
-            Servicios enfocados en Barberias
+        <div className="relative z-10 px-6 md:px-16 pb-16 md:pb-24 max-w-3xl">
+
+          <h1 className="text-4xl md:text-7xl font-bold leading-[0.95]">
+            Servicios para
+            <br />
+            Barberías
           </h1>
 
           <p className="mt-4 md:mt-6 max-w-xl text-sm md:text-lg text-gray-200">
@@ -38,7 +39,7 @@ function ServiciosBarberias() {
       {/* PROBLEMA */}
       <section className="py-16 md:py-24 px-6 max-w-5xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-brand-blueNavy">
-          Muchas barberias trabajan sin protección legal adecuada
+          Muchas barberías trabajan sin protección legal adecuada
         </h2>
 
         <p className="mt-6 text-gray-600 leading-relaxed max-w-2xl mx-auto">
@@ -99,7 +100,7 @@ function ServiciosBarberias() {
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <h4 className="font-semibold text-lg text-brand-blueNavy">
-              Gestión fiscal
+              Gestión laboral, fiscal y contable
             </h4>
             <p className="mt-3 text-gray-600 text-sm">
               Control fiscal y contable adaptado a barberías y profesionales autónomos.

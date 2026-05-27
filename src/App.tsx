@@ -18,6 +18,7 @@ import ServiciosBarberias from "./pages/ServiciosBarberias"
 import ServiciosCentrosEstetica from "./pages/ServiciosCentrosEstetica"
 import ServiciosNails from "./pages/ServiciosNails"
 import ServiciosAutonomos from "./pages/ServiciosAutonomos"
+import ServiciosOtros from "./pages/ServiciosOtros"
 
 
 
@@ -72,6 +73,12 @@ function AppContent() {
            <Route path="/servicios/autonomos" element={
             <PageTransition><ServiciosAutonomos /></PageTransition>
           } />
+
+            <Route path="/servicios/otros" element={
+            <PageTransition><ServiciosOtros /></PageTransition>
+          } />
+
+
 
 {/* FINAL RETURN DE SERVICIOS */}
 

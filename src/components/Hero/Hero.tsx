@@ -4,10 +4,10 @@ import heroMobile from "../../assets/bannerinimobile1.png"
 
 function Hero() {
   return (
-    <section className="relative min-h-[90vh] md:h-[80vh] flex items-center mt-20 md:mt-24">
+    <section className="relative h-screen flex items-center overflow-hidden">
  {/* IMAGEN DESKTOP */}
     <div
-      className="absolute inset-0 bg-cover bg-center hidden md:block"
+      className="absolute inset-0 bg-cover bg-[center_top] hidden md:block"
       style={{
         backgroundImage: `url(${heroDesktop})`,
       }}

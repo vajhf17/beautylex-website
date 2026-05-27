@@ -4,26 +4,28 @@ import ss6 from "../assets/ss6.jpeg"
 
 function ServiciosAutonomos() {
   return (
-    <main className="pt-20">
+    <main>
 
       {/* HERO */}
-      <section
-        className="relative h-[65vh] flex items-center text-white"
-        style={{
-          backgroundImage: `url(${autonomo})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
-      >
-        <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
+<section
+  className="relative h-[80vh] flex items-end text-white bg-cover bg-[center_10%]"
+  style={{
+    backgroundImage: `url(${autonomo})`,
+  }}
+>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
-            Autónomos del sector Beauty o Wellness
-          </h1>
+  <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
+
+  <div className="relative z-10 px-6 md:px-16 pb-16 md:pb-24 max-w-3xl">
+
+    <h1 className="text-4xl md:text-7xl font-bold leading-[0.95]">
+      Autónomos y
+      <br />
+      pymes
+    </h1>
 
           <p className="mt-4 md:mt-6 max-w-xl text-sm md:text-lg text-gray-200">
-            Protección legal y fiscal para profesionales independientes del sector belleza y bienestar.
+            Asesoramiento legal, fiscal y estratégico para profesionales independientes, pequeños negocios y marcas del sector belleza y bienestar.
           </p>
 
           <Link
@@ -38,11 +40,11 @@ function ServiciosAutonomos() {
       {/* PROBLEMA */}
       <section className="py-16 md:py-24 px-6 max-w-5xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-brand-blueNavy">
-          Trabajar como autónomo implica muchas responsabilidades legales
+          Trabajar como autónomo implica muchas responsabilidades legales. Asimismo, gestionar un negocio beauty implica responsabilidades legales constantes.
         </h2>
 
         <p className="mt-6 text-gray-600 leading-relaxed max-w-2xl mx-auto">
-          Muchos profesionales desconocen sus obligaciones fiscales, laborales y legales hasta que aparece una sanción o una inspección.
+          Muchos autónomos y pequeñas empresas desconocen sus obligaciones fiscales, laborales o legales hasta que aparece una inspección, reclamación o sanción inesperada.
         </p>
       </section>
 
@@ -53,18 +55,19 @@ function ServiciosAutonomos() {
           {/* TEXTO */}
           <div>
             <h3 className="text-2xl md:text-3xl font-bold text-brand-blueNavy">
-              Acompañamiento legal para profesionales independientes
+              Asesoramiento legal para autónomos y pequeñas empresas beauty
             </h3>
 
             <p className="mt-6 text-gray-600">
-              Ayudamos a autónomos del sector beauty a desarrollar su actividad de forma segura y profesional.
+              Ayudamos a profesionales independientes y pymes del sector beauty a desarrollar su actividad de forma segura, profesional y legalmente protegida.
             </p>
 
             <ul className="mt-6 space-y-3 text-gray-600">
-              <li>✔ Alta de autónomos y fiscalidad</li>
+              <li>✔ Alta y gestión de autónomos y pymes</li>
               <li>✔ Contratos y colaboraciones</li>
               <li>✔ Protección de datos</li>
               <li>✔ Defensa jurídica y asesoramiento continuo</li>
+              <li>✔ Fiscalidad y obligaciones tributarias</li>
             </ul>
           </div>
 
@@ -83,35 +86,35 @@ function ServiciosAutonomos() {
       {/* SERVICIOS */}
       <section className="py-16 md:py-24 px-6 max-w-6xl mx-auto">
         <h3 className="text-2xl md:text-3xl font-bold text-brand-blueNavy text-center">
-          Servicios para autónomos
+          Servicios para autónomos y pymes beauty
         </h3>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <h4 className="font-semibold text-lg text-brand-blueNavy">
-              Gestión fiscal
+              Gestión fiscal, laboral y contable
             </h4>
             <p className="mt-3 text-gray-600 text-sm">
-              IVA, IRPF, declaraciones trimestrales y asesoramiento fiscal especializado.
+             Asesoramiento fiscal especializado, declaraciones, contabilidad y control de obligaciones tributarias.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <h4 className="font-semibold text-lg text-brand-blueNavy">
-              Protección legal
+              Protección jurídica
             </h4>
             <p className="mt-3 text-gray-600 text-sm">
-              Contratos, reclamaciones y protección jurídica para tu actividad profesional.
+              Contratos, reclamaciones, colaboraciones y respaldo legal para proteger tu actividad o negocio.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <h4 className="font-semibold text-lg text-brand-blueNavy">
-              Protección digital
+              Protección digital y normativa
             </h4>
             <p className="mt-3 text-gray-600 text-sm">
-              Adaptación legal para redes sociales, clientes y comunicación online.
+              Adaptación legal para protección de datos, redes sociales, clientes y comunicación online.
             </p>
           </div>
 
@@ -121,7 +124,7 @@ function ServiciosAutonomos() {
       {/* BLOQUE DESTACADO */}
       <section className="bg-brand-blueNavy text-white py-16 md:py-24 px-6 text-center">
         <h3 className="text-2xl md:text-3xl font-bold">
-          Dedícate a tu talento. Nosotros protegemos tu negocio.
+          Dedícate a tu talento. Haz crecer tu negocio beauty con tranquilidad. Nosotros protegemos tu negocio.
         </h3>
 
         <p className="mt-4 text-gray-200 max-w-2xl mx-auto">

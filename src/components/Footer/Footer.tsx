@@ -3,7 +3,7 @@ import logo from "../../assets/logocircular.png"
 
 function Footer() {
   return (
-    <footer className="bg-brand-blueNavy text-white pt-24 pb-10 px-6 md:px-10 mt-24 overflow-hidden">
+    <footer className="bg-brand-blueNavy text-white pt-24 pb-10 px-6 md:px-10 overflow-hidden">
 
       <div className="max-w-7xl mx-auto">
 

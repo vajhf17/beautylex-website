@@ -4,36 +4,41 @@ import ss2 from "../assets/ss2.jpeg"
 
 function ServiciosPeluquerias() {
   return (
-    <main className="pt-20">
+    <main>
 
       {/* HERO */}
-      <section
-        className="relative h-[65vh] flex items-center text-white"
-        style={{
-          backgroundImage: `url(${peluImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
-      >
-        <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
+<section
+  className="relative h-[80vh] flex items-end text-white bg-cover bg-[center_10%]"
+  style={{
+    backgroundImage: `url(${peluImg})`,
+  }}
+>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
-            Servicios para Peluquerias
-          </h1>
+  <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
 
-          <p className="mt-4 md:mt-6 max-w-xl text-sm md:text-lg text-gray-200">
-            Protegemos tu salón frente a sanciones, inspecciones y problemas legales para que puedas centrarte en hacer crecer tu negocio con tranquilidad.
-          </p>
+  <div className="relative z-10 px-6 md:px-16 pb-16 md:pb-24 max-w-3xl">
 
-          <Link
-            to="/contacto"
-            className="inline-block mt-6 bg-brand-gold text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition"
-          >
-            Contactar
-          </Link>
-        </div>
-      </section>
+    <h1 className="text-4xl md:text-7xl font-bold leading-[0.95]">
+      Servicios para
+      <br />
+      Peluquerías
+    </h1>
+
+    <p className="mt-6 text-base md:text-lg text-gray-200 leading-relaxed max-w-xl">
+      Protegemos tu salón frente a sanciones, inspecciones y problemas legales
+      para que puedas centrarte en hacer crecer tu negocio con tranquilidad.
+    </p>
+
+    <Link
+      to="/contacto"
+      className="inline-flex mt-8 bg-brand-gold text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition"
+    >
+      Contactar
+    </Link>
+
+  </div>
+
+</section>
 
       {/* PROBLEMA */}
       <section className="py-16 md:py-24 px-6 max-w-5xl mx-auto text-center">
@@ -83,7 +88,7 @@ function ServiciosPeluquerias() {
       {/* SERVICIOS */}
       <section className="py-16 md:py-24 px-6 max-w-6xl mx-auto">
         <h3 className="text-2xl md:text-3xl font-bold text-brand-blueNavy text-center">
-          Lorem ipsum dolor sit amet
+          Servicios para Peluquerias
         </h3>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">
@@ -108,7 +113,7 @@ function ServiciosPeluquerias() {
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <h4 className="font-semibold text-lg text-brand-blueNavy">
-              Fiscal y compliance
+              Gestión laboral, fiscal y contable
             </h4>
             <p className="mt-3 text-gray-600 text-sm">
              Gestión fiscal, cumplimiento normativo y protección de datos para trabajar con tranquilidad.

@@ -4,23 +4,25 @@ import ss7 from "../assets/ss7.jpeg"
 
 function ServiciosTraspasos() {
   return (
-    <main className="pt-20">
+    <main>
 
       {/* HERO */}
       <section
-        className="relative h-[65vh] flex items-center text-white"
-        style={{
-          backgroundImage: `url(${traspaso})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
-      >
-        <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
+  className="relative h-[80vh] flex items-end text-white bg-cover bg-[center_10%]"
+  style={{
+    backgroundImage: `url(${traspaso})`,
+  }}
+>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
-            Gestión de Traspasos
-          </h1>
+  <div className="absolute inset-0 bg-brand-blueNavy/70"></div>
+
+  <div className="relative z-10 px-6 md:px-16 pb-16 md:pb-24 max-w-3xl">
+
+    <h1 className="text-4xl md:text-7xl font-bold leading-[0.95]">
+      Gestión de
+      <br />
+      Traspasos
+    </h1>
 
           <p className="mt-4 md:mt-6 max-w-xl text-sm md:text-lg text-gray-200">
             Te acompañamos en la compra, venta o traspaso de negocios del sector belleza y bienestar con seguridad jurídica.
