@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import heroDesktop from "../../assets/bannercolor.png"
-import heroMobile from "../../assets/bannerinimobile1.png"
+import heroDesktop from "../../assets/bannercolor.jpeg"
+import heroMobile from "../../assets/bannerinimobile1.jpeg"
 
 function Hero() {
   return (

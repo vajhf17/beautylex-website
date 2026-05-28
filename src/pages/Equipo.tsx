@@ -1,5 +1,5 @@
-import susanaImg from "../assets/susana1.png"
-import jordiImg from "../assets/jordi1.png"
+import susanaImg from "../assets/susana1.jpeg"
+import jordiImg from "../assets/jordi1.jpeg"
 
 function Equipo() {
   return (

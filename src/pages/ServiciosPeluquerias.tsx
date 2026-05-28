@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import peluImg from "../assets/peluqueria.png"
+import peluImg from "../assets/peluqueria.jpeg"
 import ss2 from "../assets/ss2.jpeg"
 
 function ServiciosPeluquerias() {
