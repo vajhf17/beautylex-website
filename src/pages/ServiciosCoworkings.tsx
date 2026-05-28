@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import nails from "../assets/nails.jpeg"
 import ss5 from "../assets/ss5.jpeg"
 
-function ServiciosNails() {
+function ServiciosGremios() {
   return (
     <main>
 
@@ -163,4 +163,4 @@ function ServiciosNails() {
   )
 }
 
-export default ServiciosNails
+export default ServiciosGremios
